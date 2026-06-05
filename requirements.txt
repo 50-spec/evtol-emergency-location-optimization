@@ -1,0 +1,4 @@
+gurobipy
+matplotlib
+numpy
+pandas
