@@ -559,7 +559,7 @@ def write_report(base, gamma_runs, range_runs, penalty_runs):
     lines.extend(
         [
             "",
-            "## 可直接写入论文第 5 章的要点",
+            "## 结果小结",
             "",
             f"在 Γ=6 的基准鲁棒情景下，模型选定 {base['selected_sites']} 个起降场并配置 {base['fleet_total']} 架 eVTOL，形成“中心加强、南北兼顾、边缘补盲”的空间布局。系统总成本为 {base['objective']:.2f} 万元，其中建设固定成本占 {100 * base['fixed_cost'] / base['objective']:.2f}%，机队配置成本占 {100 * base['fleet_cost'] / base['objective']:.2f}%，最坏情景惩罚成本占 {100 * base['worst_penalty_cost'] / base['objective']:.2f}%。该结果说明模型并非通过容忍高缺口来压缩投资，而是在第一阶段形成了较强的风险防御能力。",
             "",
